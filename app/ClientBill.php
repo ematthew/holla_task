@@ -30,7 +30,30 @@ class ClientBill extends Model
     {
     	# code...
     	$endpoint = '';
+        // $query = [
+        //     'id' => $payload->id,
+        //     'username' => $payload->username,
+        //     'mobile_number' => $payload->mobile_number,
+        //     'amount' => $payload->amount,
+        // ];
 
-        return true;
+        // $headers = array('Content-Type: application/json');
+
+        // try {
+        //     // send bill to api
+        //     $ch = curl_init();
+        //     curl_setopt($ch, CURLOPT_URL, $endpoint);
+        //     curl_setopt($ch, CURLOPT_POST, 1);
+        //     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($query));
+        //     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        //     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 200);
+        //     curl_setopt($ch, CURLOPT_TIMEOUT, 200);
+        //     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        //     $res = curl_exec($ch);
+            
+        //     return $res;
+        // } catch (Exception $e) {
+        //     return $e->getMessage();
+        // }
     }
 }

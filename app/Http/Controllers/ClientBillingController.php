@@ -14,7 +14,7 @@ class ClientBillingController extends Controller
     	$data     = $new_bill->processBill($request);
 
     	// return response
-    	return response()->json($data);
+    	return redirect()->back()->with($data['status'], $data['message']);
     }
 
     public function fetchAllBills(Request $request)
