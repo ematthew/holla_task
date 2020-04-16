@@ -3,10 +3,11 @@ Holla Task for handling billing data
 
 ## Follow all the steps below
 - Clone the project repository
+- Cd into the project 
 - Run composer install
 - Create database called holla
 - Run php artisan migrate
-- Run php artisan db seed to generate mock up data.
+- Run php artisan db:seed to generate mock up data.
 - Run php artisan serve.
 - Open browser to visit application on http://localhost:8000
 - Locate app/ClientBill.php class and uncomment the sendBillToApi function body
